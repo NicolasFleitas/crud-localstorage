@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/jquery-3.4.0.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+
+
+    <div class="jumbotron row ">
+        <h2> Instituto Orzuza <small> Gestión de alumnos </small></h2>
+
+        <div class="col-md-6">
+            <hr>
+            <p class="modo"> <span class="">+</span>Agregar alumno</p>
+            <form id="alumnos-form">
+                <input class="form-control" type="text" id="nombre" placeholder="Nombre">
+                <input class="form-control" type="email" id="correo" placeholder="Correo del alumno">
+                <input class="form-control" type="number" id="edad" placeholder="edad">
+                <input class="form-control" type="date" id="fecha_ingreso" placeholder="Fecha de ingreso">
+                <br>
+                <input type="submit" class="btn btn-success" value=" Guardar">
+            </form>
+            <br>
+            <br>
+            <div id="numeroAlumnos">
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <!-- <img style=" width:100%" src="alumno.jpg" alt="" /> -->
+        </div>
+
+    </div>
+    <div class="mensaje-alerta">
+    </div>
+
+    <br>
+    <br>
+    <table class="table" id="dbAlumnos-list">
+
+    </table>
+
+</body>
+<script type="text/javascript" src="js/funciones.js"></script>
+
+</html>
